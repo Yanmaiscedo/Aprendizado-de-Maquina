@@ -1,140 +1,116 @@
-# Aprendizado-de-Maquina
-Este projeto contém vários modelos de Machine Learning conforme solicitado no PI1:
-- KNN
-- Decision Tree
-- XGBoost
-- LightGBM
-- Rede Neural Artificial (ANN)
+# Aprendizado-de-Máquina -- PI1
 
----
-🛠️ 1. Preparando o ambiente
+Este projeto contém vários modelos de Machine Learning desenvolvidos
+para o Projeto Individual (PI1), incluindo:
 
-✔️ 1.1 Instale o Python
+-   Regressão Linear\
+-   Regressão Logística\
+-   Random Forest\
+-   Support Vector Machine (SVM)\
+-   KNN\
+-   Decision Tree\
+-   XGBoost\
+-   LightGBM\
+-   Rede Neural Artificial (ANN)
 
-Versão recomendada: Python 3.10 ou 3.11
+------------------------------------------------------------------------
 
-Baixar em: https://www.python.org/downloads/
+## 🛠️ 1. Preparando o ambiente
 
-Durante a instalação, marque a opção:
+### ✔️ 1.1 Instale o Python
 
-✔️ Add Python to PATH.
+Versão recomendada: **Python 3.10 ou 3.11**\
+Baixe em: https://www.python.org/downloads/
 
----
+Durante a instalação, marque:
 
-📂 2. Instalando as bibliotecas necessárias
+✔️ **Add Python to PATH**
+
+------------------------------------------------------------------------
+
+## 📂 2. Instalando as bibliotecas necessárias
 
 Abra o terminal do VS Code e execute:
 
-- pip install numpy pandas matplotlib seaborn scikit-learn tensorflow xgboost lightgbm
+    pip install numpy pandas matplotlib seaborn scikit-learn tensorflow xgboost lightgbm
 
----
+------------------------------------------------------------------------
 
-📦 3. Estrutura de pastas sugerida
+## 📦 3. Estrutura de pastas sugerida
 
-PI1
+    PI1
+    │─ Regressao_Linear_Logistica.py
+    │─ Random_Forest_SVM.py
+    │─ KNN_Árvore_Decisao.py
+    │─ XGBoost_LightGBM.py
+    │─ ANN.py
+    │─ README.md
 
-─ knn_decision_tree.py
+------------------------------------------------------------------------
 
-─ xgboost_lightgbm.py
+## ▶️ 4. Como rodar cada código
 
-─ ann.py
+Os passos são os mesmos para todos os arquivos:
 
-─ README.md
+1.  Abra o **VS Code**
+2.  Vá em **File \> Open Folder** e selecione a pasta do projeto
+3.  Abra o arquivo `.py` desejado
+4.  Abra o terminal do VS Code:\
+    **Terminal \> New Terminal**
+5.  Execute:
 
----
+```{=html}
+<!-- -->
+```
+    python nome_do_arquivo.py
 
-▶️ 4. Como rodar cada código
+------------------------------------------------------------------------
 
-Os passos são os mesmos para todos:
+## 🔴 5. Como rodar Regressão Linear + Regressão Logística
 
-Abra o VS Code
+**Arquivo:** `Regressao_Linear_Logistica.py`
 
-Vá em File > Open Folder e selecione a pasta do projeto
+    python Regressao_Linear_Logistica.py
 
-Clique no arquivo .py que você quer rodar
+------------------------------------------------------------------------
 
-No VS Code, abra um terminal:
+## 🟣 6. Como rodar Random Forest + SVM
 
-Terminal > New Terminal
+**Arquivo:** `Random_Forest_SVM.py`
 
-Execute:
+    python Random_Forest_SVM.py
 
-- python nome_do_arquivo.py
+------------------------------------------------------------------------
 
----
+## 🔵 7. Como rodar KNN + Decision Tree
 
-🔵 5. Como rodar o arquivo KNN + Decision Tree
+**Arquivo:** `KNN_Árvore_Decisao.py`
 
-Nome do arquivo: KNN_Árvore_Decisao.py
+    python KNN_Árvore_Decisao.py
 
-Terminal:
+------------------------------------------------------------------------
 
-- python KNN_Árvore_Decisao.py
+## 🟠 8. Como rodar XGBoost + LightGBM
 
+**Arquivo:** `XGBoost_LightGBM.py`
 
-Esse script inclui:
+    python XGBoost_LightGBM.py
 
-✔️ ETL
+⚠️ Se o LightGBM der erro no Windows, tente:
 
-✔️ Treinamento KNN
+    pip install lightgbm --install-option=--gpu
 
-✔️ Treinamento Decision Tree
+------------------------------------------------------------------------
 
-✔️ Gráficos
+## 🧠 9. Como rodar a Rede Neural Artificial (ANN)
 
-✔️ Comparação de desempenho
+**Arquivo:** `ANN.py`
 
----
+    python ANN.py
 
-🟠 6. Como rodar o arquivo XGBoost + LightGBM
+------------------------------------------------------------------------
 
-Nome do arquivo: XGBoost_LightGBM.py
+## 🎨 10. Visualização dos gráficos
 
-Terminal:
-
-- python XGBoost_LightGBM.py
-
-
-Esse script inclui:
-
-✔️ Treino com XGBoost
-
-✔️ Treino com LightGBM
-
-✔️ ETL + limpeza
-
-✔️ Gráficos
-
-✔️ Comparação dos modelos
-
-⚠️ Observação importante no Windows:
-
-Se o LightGBM der erro na instalação, use:
-
-pip install lightgbm --install-option=--gpu
-
----
-
-🧠 7. Como rodar a Rede Neural Artificial (ANN)
-
-Nome do arquivo: ANN.py
-
-Terminal:
-
-python ANN.py
-
-
-Esse script inclui:
-
-✔️ Geração de dados
-
-✔️ Normalização
-
-✔️ Treinamento da rede neural
-
-✔️ Gráficos de loss e accuracy
-
-✔️ Relatório de classificação
-
-
-[...]
+Todos os scripts utilizam **matplotlib**, então os gráficos irão abrir
+automaticamente ao final da execução.
